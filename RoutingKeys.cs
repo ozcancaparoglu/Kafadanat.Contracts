@@ -10,4 +10,5 @@ public static class RoutingKeys
     public const string RunRefunded          = "wallet.run.refunded";
     public const string EngineRunFailed      = "prediction.run.failed";
     public const string PredictionReady      = "prediction.ready";
+    public const string UserDeleted          = "wallet.user.deleted";
 }
