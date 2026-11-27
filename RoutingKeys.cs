@@ -11,4 +11,6 @@ public static class RoutingKeys
     public const string EngineRunFailed      = "prediction.run.failed";
     public const string PredictionReady      = "prediction.ready";
     public const string UserDeleted          = "wallet.user.deleted";
+    public const string UsernameChanged      = "auth.username.changed";
+    public const string GameRewardEarned     = "prediction.game.reward";
 }
