@@ -5,7 +5,9 @@ namespace Kafadanat.Contracts;
 /// the user's shared motors. Idempotent for consumers: apply Username as the current value.
 /// </summary>
 /// <param name="UserId">The Keycloak user id, the same id other services receive as the token subject.</param>
-/// <param name="Username">The new public username (lower-case, already validated and unique).</param>
+/// <param name="Username">The new public username (lower-case, already validated and unique). EMPTY means the
+/// username was cleared (an admin removed it): the user has no public name now, so they can't share a motor and
+/// consumers take their shared motors off the list.</param>
 public sealed record UsernameChanged(
     Guid UserId,
     string Username,

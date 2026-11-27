@@ -13,4 +13,5 @@ public static class RoutingKeys
     public const string UserDeleted          = "wallet.user.deleted";
     public const string UsernameChanged      = "auth.username.changed";
     public const string GameRewardEarned     = "prediction.game.reward";
+    public const string LeaderboardRewardEarned = "prediction.leaderboard.reward";
 }
